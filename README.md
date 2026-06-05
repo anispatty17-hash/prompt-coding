@@ -2,11 +2,11 @@ CREATE A COMPLETE FLUTTER ANDROID APPLICATION.
 
 PROJECT NAME:
 
-ANZZZ TUNER
+ANZZZ ADMIN
 
 PACKAGE NAME:
 
-com.anzzz.tuner
+com.anzzz.admin
 
 IMPORTANT:
 
@@ -36,17 +36,47 @@ ONLY USE:
 
 PURPOSE
 
-Gaming Config Manager
-Gaming Optimizer
-Tweak Manager
+Mobile Admin Dashboard
+
+Manage:
+
+Games
+
+Configs
+
+Tweaks
+
+Optimizers
+
+Users
+
+APK Versions
+
+Banners
+
+Icons
+
+Announcements
+
+================================================
+
+LOGIN
+
+Username
+
+Password
+
+JWT Authentication
+
+Remember Me
 
 ================================================
 
 DESIGN
 
-Steam Inspired UI
+Premium Gaming Dashboard
 
-Dark Gaming Theme
+Dark Theme
 
 Black Background
 
@@ -56,45 +86,45 @@ Cyan Accent
 
 Glassmorphism
 
-Modern Animations
-
-Premium Gaming Cards
+Modern Cards
 
 ================================================
 
 BOTTOM NAVIGATION
 
-Home
+Dashboard
 
 Games
 
 Configs
 
-Tweaks
+Users
 
-Downloads
-
-Profile
+Settings
 
 ================================================
 
-HOME
+DASHBOARD
 
-Featured Banners
+Total Games
 
-Latest Configs
+Total Configs
 
-Popular Tweaks
+Total Users
 
-Announcements
+Total Downloads
 
-Latest Updates
+Recent Activity
 
 ================================================
 
-GAMES
+GAME MANAGER
 
-Load from API
+Add Game
+
+Edit Game
+
+Delete Game
 
 Fields:
 
@@ -102,25 +132,37 @@ Game Name
 
 Package Name
 
-Icon
+Version
 
 Banner
 
-Version
+Icon
 
-Installed Status
+Description
+
+Status
 
 ================================================
 
-CONFIG SYSTEM
+CONFIG MANAGER
 
-Dynamic from API
+MOST IMPORTANT
 
-No hardcoded configs
+Upload:
+
+ini
+
+cfg
+
+json
+
+zip
 
 Fields:
 
 Config Name
+
+Game
 
 Version
 
@@ -128,113 +170,129 @@ Description
 
 Compatibility
 
-File URL
-
 Install Method
 
 Target Path
 
-Examples:
+Status
 
-Anzzz Anti Lag V7
-
-Anzzz FPS Boost
-
-Anzzz Competitive
-
-Anzzz Ultra Graphics
+Featured
 
 ================================================
 
-INSTALL FLOW
+TARGET PATH
 
-Select Game
+Admin controls path.
 
-↓
+Example:
 
-Select Config
-
-↓
-
-Install
-
-↓
-
-Download Config
-
-↓
-
-Read API Instructions
-
-↓
-
-Apply Config
+/Android/data/com.kurogame.wutheringwaves.global/files/UE4Game/Client/Client/Saved/Config/Android/Engine.ini
 
 ================================================
 
-TWEAK SYSTEM
+TWEAK MANAGER
 
-Gaming Mode
+Add Tweak
 
-Performance Mode
+Edit Tweak
 
-Battery Saver
-
-Network Optimizer
-
-Touch Optimizer
-
-RAM Optimizer
+Delete Tweak
 
 ================================================
 
-OPTIMIZER
+OPTIMIZER MANAGER
 
 Ultra Performance
 
 Balanced
 
-Competitive
-
 Battery Saver
+
+Competitive
 
 Custom
 
 ================================================
 
-UPDATE SYSTEM
+BANNER MANAGER
 
-GET /version
+Upload Banner
 
-Show:
+Delete Banner
+
+Replace Banner
+
+================================================
+
+ICON MANAGER
+
+Upload Icon
+
+Delete Icon
+
+Replace Icon
+
+================================================
+
+ANNOUNCEMENT MANAGER
+
+Create Announcement
+
+Edit Announcement
+
+Delete Announcement
+
+================================================
+
+APK UPDATE MANAGER
+
+Upload APK
 
 Version
 
+Version Code
+
 Changelog
 
-Update Button
-
-Open APK URL
-
-Support:
+Download URL
 
 Force Update
 
-Optional Update
+================================================
+
+USER MANAGER
+
+View Users
+
+Search Users
+
+Ban Users
+
+Unban Users
 
 ================================================
 
 API
 
+POST /login
+
 GET /games
+
+POST /games
+
+PUT /games
+
+DELETE /games
 
 GET /configs
 
-GET /tweaks
+POST /configs
 
-GET /optimizers
+PUT /configs
 
-GET /announcements
+DELETE /configs
+
+GET /users
 
 GET /version
 
