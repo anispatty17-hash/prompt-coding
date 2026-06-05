@@ -1,195 +1,454 @@
-# prompt-coding
-Buatkan aplikasi Android bernama ANZZZ TUNER.
+CREATE A COMPLETE FLUTTER ANDROID ADMIN APPLICATION.
 
-PENTING:
+PROJECT NAME:
 
-JANGAN membuat API backend.
-JANGAN membuat database.
-JANGAN membuat koneksi server.
-JANGAN membuat endpoint.
-JANGAN menghubungkan ke Firebase.
-JANGAN menghubungkan ke MySQL.
+ANZZZ ADMIN
 
-Buat aplikasi dalam kondisi OFFLINE / DEMO MODE.
+IMPORTANT:
 
-Saya akan menghubungkan database, API, config, dan server sendiri nanti.
+THIS IS A FLUTTER ANDROID APPLICATION.
 
-TUJUAN:
+DO NOT CREATE:
 
-Buat kerangka aplikasi Android lengkap dengan UI premium, navigasi, model data lokal, halaman, dan sistem placeholder sehingga nanti mudah dihubungkan ke backend.
+- Website
+- NextJS
+- React
+- TypeScript
+- Tailwind CSS
+- NodeJS
 
-TEKNOLOGI:
+ONLY USE:
 
 - Flutter Stable
+- Dart
 - Material Design 3
 - Riverpod
-- Responsive Mobile
-- Android Only
+- Dio
+- Go Router
+- Shared Preferences
+- Flutter Animate
 
-DESAIN:
+TARGET:
 
-- Steam Mobile Style
-- Dark Gaming Theme
-- Neon Purple
-- Neon Cyan
+Android APK
+
+PACKAGE NAME:
+
+com.anzzz.admin
+
+================================================
+
+PURPOSE
+
+ANZZZ ADMIN is a dedicated administrator application for managing:
+
+- Games
+- Configs
+- Tweaks
+- Optimizers
+- APK Versions
+- Users
+- Banners
+- Icons
+- Announcements
+
+This application must NEVER expose admin features to the User App.
+
+================================================
+
+DESIGN REQUIREMENTS
+
+Create an extremely premium gaming dashboard.
+
+Inspired By:
+
+- Steam
+- Discord
+- Modern Gaming Launchers
+
+Theme:
+
+- Pure Dark Background
+- Neon Purple Accent
+- Cyan Accent
 - Glassmorphism
-- Smooth Animation
-- Premium Modern UI
+- Smooth Animations
+- Premium Cards
+- Material Design 3
+- Modern Dashboard
 
-FITUR:
+Animations:
 
-HOME PAGE
+- Fade In
+- Slide In
+- Scale Animation
+- Skeleton Loading
+- Hero Animation
 
-- Banner Slider Dummy
-- Trending Games
-- Popular Games
-- Installed Games
-- Search Bar
-- Device Information
+================================================
 
-GAME PAGE
+LOGIN SYSTEM
 
-Tampilkan data dummy:
+Create:
 
-- Nama Game
-- Banner
-- Icon
-- Package Name
-- Version
-- Status
+Admin Login Screen
 
-CONFIG PAGE
-
-Tampilkan data dummy:
-
-- Anti Lag
-- FPS Boost
-- Balanced
-- Extreme Performance
-- Ultra Graphics
-
-Semua menggunakan data lokal JSON dummy.
-
-TWEAK PAGE
-
-Tampilkan kategori:
-
-- Gaming Mode
-- Battery Mode
-- Performance Mode
-- Daily Mode
-
-Semua menggunakan data contoh lokal.
-
-DOWNLOAD PAGE
-
-Tampilkan:
-
-- Download History
-- Install History
-
-Menggunakan dummy data.
-
-PROFILE PAGE
-
-Tampilkan:
+Fields:
 
 - Username
-- Avatar
-- Membership
+- Password
 
-Dummy data.
+Features:
 
-ADMIN MODE UI
+- Remember Me
+- JWT Authentication Ready
+- Secure Session Management
+- Logout
 
-Buat halaman admin lokal tanpa backend.
+Create a configurable default admin account for development only.
 
-Menu:
+================================================
 
-- Manage Games
-- Manage Configs
-- Manage Tweaks
-- Manage Banners
+BOTTOM NAVIGATION
 
-Semua hanya UI dan model data lokal.
+Dashboard
+Games
+Configs
+Tweaks
+Users
+Settings
 
-ARSITEKTUR:
+================================================
 
-Pisahkan folder:
+DASHBOARD
 
-lib/
+Show beautiful analytics cards:
 
-├── core/
-├── models/
-├── services/
-├── providers/
-├── screens/
-├── widgets/
-├── themes/
-├── routes/
-├── dummy_data/
+- Total Games
+- Total Configs
+- Total Tweaks
+- Total Users
+- Total Downloads
 
-Buat model terpisah:
+Recent Activity Feed
 
-GameModel
-ConfigModel
-TweakModel
-BannerModel
-UserModel
+Latest Config Uploads
 
-Buat service dummy:
+Latest APK Uploads
 
-GameService
-ConfigService
-TweakService
+================================================
 
-Semua mengambil data dari file JSON lokal.
+GAME MANAGER
 
-NAVIGASI:
+Features:
 
-Bottom Navigation:
+Add Game
 
-- Home
-- Games
-- Tweaks
-- Downloads
-- Profile
+Edit Game
 
-KUALITAS KODE:
+Delete Game
 
-- Clean Architecture
-- Reusable Widgets
-- Null Safety
-- Modular Structure
-- Mudah dihubungkan ke API di masa depan
+Fields:
 
-OUTPUT YANG DIINGINKAN:
+Game Name
 
-1. Source code Flutter lengkap.
-2. Struktur folder profesional.
-3. APK Demo Build.
-4. File README.md lengkap.
-5. Dokumentasi cara menghubungkan API sendiri.
-6. Dokumentasi lokasi yang harus diubah untuk koneksi database.
-7. Semua data menggunakan JSON dummy lokal.
-8. Tidak boleh ada backend ataupun database bawaan.
+Package Name
 
-Tambahkan komentar di seluruh kode:
+Version
 
-// CONNECT YOUR API HERE
+Banner
 
-// CONNECT DATABASE HERE
+Icon
 
-// REPLACE WITH REAL DATA
+Description
 
-agar mudah dikembangkan nanti.
-Buat README.md yang menjelaskan:
+Status
 
-- Cara build APK
-- Cara mengganti dummy data menjadi API
-- Cara menghubungkan Laravel backend
-- Cara menghubungkan MySQL
-- Lokasi file yang harus diedit
-- Struktur proyek lengkap
+Featured Toggle
 
-Jelaskan seolah proyek ini akan diserahkan kepada developer lain untuk dilanjutkan.
+================================================
+
+CONFIG MANAGER
+
+MOST IMPORTANT SECTION
+
+Admin Can:
+
+Add Config
+
+Edit Config
+
+Delete Config
+
+Upload Config Files
+
+Supported:
+
+- ini
+- cfg
+- json
+- zip
+
+Fields:
+
+Config Name
+
+Game
+
+Version
+
+Description
+
+File URL
+
+Target Path
+
+Install Method
+
+Compatibility
+
+Status
+
+Featured
+
+================================================
+
+INSTALL METHODS
+
+Replace File
+
+Copy File
+
+Extract ZIP
+
+Import JSON
+
+================================================
+
+TARGET PATH SETTINGS
+
+Admin controls installation location.
+
+Examples:
+
+/Android/data/com.kurogame.wutheringwaves.global/files/UE4Game/Client/Client/Saved/Config/Android/Engine.ini
+
+/Admin/AndroidData/GameFolder/Config.ini
+
+Store target paths dynamically.
+
+================================================
+
+TWEAK MANAGER
+
+Create beautiful tweak management.
+
+Fields:
+
+Name
+
+Description
+
+Category
+
+Compatibility
+
+Status
+
+Featured
+
+================================================
+
+OPTIMIZER MANAGER
+
+Profiles:
+
+Ultra Performance
+
+Balanced
+
+Battery Saver
+
+Competitive
+
+Custom
+
+Admin can create unlimited profiles.
+
+================================================
+
+APK UPDATE MANAGER
+
+Features:
+
+Upload APK
+
+Version Number
+
+Version Code
+
+Changelog
+
+Download URL
+
+Force Update Toggle
+
+Optional Update Toggle
+
+Release Notes
+
+================================================
+
+BANNER MANAGER
+
+Upload Banner
+
+Replace Banner
+
+Delete Banner
+
+Preview Banner
+
+================================================
+
+ICON MANAGER
+
+Upload Icon
+
+Replace Icon
+
+Delete Icon
+
+Preview Icon
+
+================================================
+
+ANNOUNCEMENT MANAGER
+
+Create Announcement
+
+Edit Announcement
+
+Delete Announcement
+
+Priority Levels
+
+Publish Date
+
+================================================
+
+USER MANAGER
+
+View Users
+
+Search Users
+
+Ban Users
+
+Unban Users
+
+Role Management
+
+================================================
+
+SETTINGS PAGE
+
+API Base URL
+
+Theme Settings
+
+Security Settings
+
+Backup Settings
+
+About App
+
+================================================
+
+API STRUCTURE
+
+Base URL:
+
+https://api.example.com/api
+
+Endpoints:
+
+POST /login
+
+GET /games
+
+POST /games
+
+PUT /games
+
+DELETE /games
+
+GET /configs
+
+POST /configs
+
+PUT /configs
+
+DELETE /configs
+
+GET /tweaks
+
+POST /tweaks
+
+GET /users
+
+GET /version
+
+================================================
+
+PROJECT STRUCTURE
+
+Generate:
+
+pubspec.yaml
+
+lib/main.dart
+
+lib/core
+
+lib/models
+
+lib/services
+
+lib/providers
+
+lib/routes
+
+lib/screens
+
+lib/widgets
+
+lib/themes
+
+lib/utils
+
+================================================
+
+OUTPUT REQUIREMENTS
+
+Generate actual Flutter code.
+
+Generate all screens.
+
+Generate all widgets.
+
+Generate all services.
+
+Generate all models.
+
+Generate all routes.
+
+Generate complete project structure.
+
+The application must compile successfully.
+
+Do not generate web code.
+
+Do not generate placeholders.
+
+Generate a professional production-ready Android admin application.
